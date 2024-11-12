@@ -1,5 +1,5 @@
 function calcularMedia(a, b, c) {
-    return (a + b + c) / c; 
+    return (a + b + c) / 3; 
 }
 
 function exibirResultado() {
