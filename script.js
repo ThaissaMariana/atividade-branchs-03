@@ -2,7 +2,10 @@ function calcularMedia(a, b, c) {
     return (a + b + c) / 3; 
 }
 
+
+// Função para exibir o resultado da média
 function exibirResultado() {
+    // Pegando os valores dos campos de entrada
     const numero1 = parseFloat(document.getElementById("numero1").value);
     const numero2 = parseFloat(document.getElementById("numero2").value);
     const numero3 = parseFloat(document.getElementById("numero3").value);
@@ -16,4 +19,5 @@ function exibirResultado() {
     document.getElementById("resultadoMedia").innerText = `A média dos números é: ${media.toFixed(2)}`;
 }
 
+// Adiciona o evento de clique ao botão
 document.getElementById("calcularBtn").addEventListener("click", exibirResultado);
