@@ -31,6 +31,6 @@ document.getElementById('converterBtn').addEventListener('click', () => {
         return;
     }
 
-    const fahrenheit = (celsius * 9/5) + celsius;
+    const fahrenheit = (celsius * 9/5) + 32;
     document.getElementById('resultadoConversao').textContent = `A temperatura em Fahrenheit é: ${fahrenheit.toFixed(2)}°F.`;
 });
