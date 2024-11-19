@@ -21,3 +21,16 @@ function exibirResultado() {
 
 // Adiciona o evento de clique ao botão
 document.getElementById("calcularBtn").addEventListener("click", exibirResultado);
+
+
+document.getElementById('converterBtn').addEventListener('click', () => {
+    const celsius = parseFloat(document.getElementById('celsius').value);
+    
+    if (isNaN(celsius)) {
+        document.getElementById('resultadoConversao').textContent = 'Por favor, insira um número válido.';
+        return;
+    }
+
+    const fahrenheit = (celsius * 9/5) + celsius;
+    document.getElementById('resultadoConversao').textContent = `A temperatura em Fahrenheit é: ${fahrenheit.toFixed(2)}°F.`;
+});
