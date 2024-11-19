@@ -27,7 +27,7 @@ document.getElementById('converterBtn').addEventListener('click', () => {
     const celsius = parseFloat(document.getElementById('celsius').value);
     
     if (isNaN(celsius)) {
-        document.getElementById('resultadoConversao').textContent = 'Por favor, insira um número válido.';
+        document.getElementById('resultadoConversao').textContent = 'Por favor, insira um número que seja válido.';
         return;
     }
 
